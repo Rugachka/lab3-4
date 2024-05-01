@@ -2,9 +2,51 @@ body{
     margin: 0;
     font-family: "Jacquard 24", system-ui;
         font-family: "Cabin", sans-serif;
+            background-color: palegoldenrod;
         
       
 }
+@media screen and (max-width: 500px) {
+.btn{
+    display: none;
+}
+
+.number{
+    display: none;
+}
+
+    .card-holder{
+        display: none;
+        justify-content: space-between;
+    }
+    
+    .card{
+        box-shadow: -20px -20px 20px 20px #0000001A;
+        width: 500px;
+        /* margin-right: 20px; */
+        background-color: #fff;
+        margin-top: 20px;
+        padding:  10px;
+    }
+    .card3{
+        display: none;
+    }
+   
+    .body {
+      background-color: chocolate;
+    }
+    .header-line{
+        float: none; 
+        width: 100%;
+        justify-content: space-around; 
+        /* display: none; */
+    }
+    
+    .history-images{
+        display: none;
+    }
+  }
+
 .container {
     margin: 0px 5px;
 }
@@ -14,6 +56,9 @@ height: 100vh;
 background-repeat: no-repeat;
 background-size: cover;
 }
+
+
+
 .header-line{
     display: flex;
     align-items: center;
@@ -85,14 +130,25 @@ align-items: center;
 font-size: 18px;
 }
 
+
+
 .card-holder{
     display: flex;
     justify-content: space-between;
 }
 
 .card{
-    box-shadow: 10px 10px 40px 20px #0000001A;
+    box-shadow: -20px -20px 20px 20px #0000001A;
     width: 500px;
+    margin-right: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.card3{
+    /* box-shadow: 10px 10px 40px 20px #0000001A; */
+    
     margin-right: 20px;
     background-color: #fff;
     margin-top: 20px;
@@ -174,4 +230,13 @@ font-size: 18px;
 }
 .num-items span{
     text-decoration: none;
+}
+.header-title{
+    font-family: "Jacquard 24", system-ui
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 100%;
+    }
 }
