@@ -14,26 +14,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 <title>Larek</title>
 </head>
-<body
-onload="javascript:alert('Ви підтверджуєте є 18 років?');"
-onunload="alert('До побачення!')">
+<body onload="javascript:alert('Ви підтверджуєте є 18 років?');" onunload="alert('До побачення!')">
 
-
-
-    <div class="header">
-        <div class='container'>
-           <div class="header-line">
-              <div class="header-logo">
-                <img src="images/logotext2.png" width="250" height="150">
-              </div>
-              <div class="nav">
-        
-                <!--<h1> Пивняшка </h1>
-                <h3>Магазин пива</h3>-->
-                <a class="nav-item" href="@">ГОЛОВНА</a>
-                <a class="nav-item" href="https://rugachka.github.io/regform/">Користувач</a>
-                <a class="nav-item" href="https://www.instagram.com/addmmiralll?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">ПРО НАС</a>
-              </div>
+  <div class="header">
+    <div class='container'>
+      <div class="header-line">
+        <div class="header-logo" onclick="toggleMenu()">
+          Пивняшка
+        </div>
+        <div id="menu" class="menu">
+          <a class="nav-item" href="#">ГОЛОВНА</a>
+          <a class="nav-item" href="https://rugachka.github.io/regform/">КОРИСТУВАЧ</a>
+          <a class="nav-item" href="https://www.instagram.com/addmmiralll?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">ПРО НАС</a>
+        </div>
               <div class="phone">
                 <div class="phone-holder">
                 <div class="truba">
@@ -54,7 +47,7 @@ onunload="alert('До побачення!')">
               <div class="header-down">
                 
                 <div class="header-title">
-                  Пивняшка
+                  <img src="images/logotext3.png" width="700px" height="300px" alt="Пивняшка"> 
                   <div class="header-subtitle">
                      перший аніме бар в Україні
                   </div> 
@@ -233,5 +226,15 @@ onunload="alert('До побачення!')">
   </div>
 </div>
 </div>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('open')) {
+      menu.classList.remove('open');
+    } else {
+      menu.classList.add('open');
+    }
+  }
+</script>
 </body>
 </html>
