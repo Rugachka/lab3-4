@@ -9,7 +9,7 @@ body{
 .menu {
     position: relative;
     top: 15;
-    right: 900px; /* Початково приховане праворуч */
+    right: 1000px; /* Початково приховане праворуч */
     width: 200px;
     background-color: #fff;
     /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
